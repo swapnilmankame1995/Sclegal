@@ -64,7 +64,7 @@ export const Sidebar = ({ activePage, onNavigate, isOpen, onClose }) => {
         </nav>
 
         <div className="p-4 border-t border-[#30363d] text-xs text-[#8b949e]">
-          &copy; 2025 Company Inc.
+          &copy; 2025 SheetCutters.
         </div>
       </aside>
     </>

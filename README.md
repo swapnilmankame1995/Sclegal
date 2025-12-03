@@ -1,7 +1,7 @@
 
-  # Single Page Website
+  # Sheet Cutters Legal Pages
 
-  This is a code bundle for Single Page Website. The original project is available at https://www.figma.com/design/l1ZaKw61DVhWYycTZfgh51/Single-Page-Website.
+  This is a code bundle for Sheet Cutters Legal Pages. The original project is available at https://www.figma.com/design/l1ZaKw61DVhWYycTZfgh51/Sheet-Cutters-Legal-Pages.
 
   ## Running the code
 
