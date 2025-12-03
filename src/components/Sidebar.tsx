@@ -1,7 +1,7 @@
-
+import { Link } from 'react-router-dom';
 import { siteContent } from './data';
 
-export const Sidebar = ({ activePage, onNavigate, isOpen, onClose }) => {
+export const Sidebar = ({ activePage, isOpen, onClose }) => {
   const links = [
     { key: 'philosophy', label: 'Our Philosophy' },
     { key: 'contact', label: 'Contact Us' },
@@ -44,20 +44,18 @@ export const Sidebar = ({ activePage, onNavigate, isOpen, onClose }) => {
           <ul className="space-y-1">
             {links.map((link) => (
               <li key={link.key}>
-                <button
-                  onClick={() => {
-                    onNavigate(link.key);
-                    onClose();
-                  }}
+                <Link
+                  to={`/${link.key}`}
+                  onClick={onClose}
                   className={`
-                    w-full text-left px-3 py-2 rounded-md text-sm transition-colors
+                    block w-full text-left px-3 py-2 rounded-md text-sm transition-colors
                     ${activePage === link.key 
                       ? 'bg-[#1f6feb] text-white font-medium' 
                       : 'text-[#c9d1d9] hover:bg-[#21262d] hover:text-[#58a6ff]'}
                   `}
                 >
                   {link.label}
-                </button>
+                </Link>
               </li>
             ))}
           </ul>
